@@ -1,0 +1,2 @@
+###get profile
+GET http://localhost:3000/user/profile

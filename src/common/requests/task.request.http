@@ -1,0 +1,31 @@
+###add a new task
+POST http://localhost:3000/task
+Content-Type: application/json
+
+{
+    "name":"mySecond",
+    "categoryId":"6698018c972fb80f39959c7c",
+    "isPrivate":true,
+    "taskType":"list",
+    "body":"tessssst",
+    "items":[{"body":"Tet1"},{"body":"Tet2"}]
+}
+
+
+###update an existing task
+PUT http://localhost:3000/task/6697b969ae46ce6b147fec97
+Content-Type: application/json
+
+{
+    "name":"mypublicOne",
+    "categoryId":"669650c478ea2596078b0344",
+    "isPrivate":true,    
+    "body":"testt updated",
+    "items":[{"body":"test 1 updated"},{"body":"Tet2"}]
+}
+
+
+
+###get all tasks
+### isPrivate=true & category=66965ba43012db669de728c4 & sortBy= & sortOrder 
+GET  http://localhost:3000/task

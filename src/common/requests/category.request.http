@@ -1,0 +1,27 @@
+###add a new category
+POST http://localhost:3000/category
+Content-Type: application/json
+
+{
+    "name":"category two"
+}
+
+
+###Get my categories
+GET http://localhost:3000/category
+
+###Get category by ID
+GET http://localhost:3000/category/6697c50ac33ae40d16b44b8a
+
+### update category
+PUT http://localhost:3000/category/6697c50ac33ae40d16b44b8a
+Content-Type: application/json
+
+{
+    "name":"categroy five"
+}
+
+
+
+###delete category by ID
+DELETE http://localhost:3000/category/669650c478ea2596078b0344
